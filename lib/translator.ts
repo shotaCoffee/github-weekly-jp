@@ -32,15 +32,20 @@ export async function translateDescription(
       const translated = response.data.translations[0].text;
       console.log(`✓ Translated ${repoName}`);
       return translated;
-    } catch (error: any) {
-      if (error?.response?.status === 429 && attempt < retries - 1) {
+    } catch (error) {
+      if (axios.isAxiosError(error) && error.response?.status === 429 && attempt < retries - 1) {
         // 429エラー時は指数バックオフで待機
         const waitTime = Math.pow(2, attempt) * 2000; // 2秒, 4秒, 8秒
         console.log(`Rate limit hit for ${repoName}, waiting ${waitTime / 1000}s...`);
         await new Promise((resolve) => setTimeout(resolve, waitTime));
         continue;
       }
-      console.error(`Translation error for ${repoName}:`, error?.response?.status || error?.message);
+      const errorMessage = axios.isAxiosError(error)
+        ? error.response?.status
+        : error instanceof Error
+          ? error.message
+          : 'Unknown error';
+      console.error(`Translation error for ${repoName}:`, errorMessage);
       return description; // フォールバック
     }
   }

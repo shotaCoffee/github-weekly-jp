@@ -2,124 +2,101 @@
 
 > 今週注目のGitHubリポジトリ TOP10を日本語で
 
-GitHub Trendingの人気リポジトリを日本語説明付きで表示するWebアプリケーション。
+GitHub Trendingで話題のリポジトリを、日本語の説明付きで簡単にチェックできるWebサービスです。
+
+## このサービスについて
+
+GitHub Weekly JPは、世界中の開発者が注目しているGitHubリポジトリを、日本語で分かりやすく紹介するサービスです。
+
+毎日・毎週・毎月のトレンドランキングから、気になる技術やプロジェクトを見つけることができます。
 
 ## 特徴
 
-- ✨ **日本語翻訳**: DeepL APIで自動的に説明文を日本語化
-- 🔥 **リアルタイム**: GitHub Trendingから最新のトレンドを取得
-- 🎯 **フィルター機能**: プログラミング言語と期間で絞り込み
-- 📱 **レスポンシブ**: スマートフォン・タブレット・PCに対応
-- 🤖 **自動更新**: Vercel Cronで定期的にデータを更新
-- 💰 **完全無料**: 無料枠のみで運用可能（月額 ¥0）
+- 🌏 **日本語で読める**: すべてのリポジトリ説明が日本語に翻訳されています
+- 🔥 **最新のトレンド**: GitHubで今注目されているプロジェクトをリアルタイムで表示
+- 🎯 **簡単検索**: プログラミング言語や期間で絞り込んで探せます
+- 📱 **どこでも使える**: スマートフォン、タブレット、パソコンに対応
+- 🆓 **完全無料**: すべての機能を無料で利用できます
+
+## 使い方
+
+1. **サイトにアクセス**
+   - ブラウザでサイトを開くだけで、最新のトレンドリポジトリが表示されます
+
+2. **期間を選ぶ**
+   - 「今日」「今週」「今月」のボタンで、見たい期間を選択できます
+
+3. **言語で絞り込む**
+   - プルダウンメニューから、興味のあるプログラミング言語を選べます
+   - 例: JavaScript, Python, Go, Rustなど
+
+4. **リポジトリを見る**
+   - 気になるプロジェクトをクリックすると、GitHubページが開きます
+
+## よくある質問
+
+### どのくらいの頻度で更新されますか？
+
+毎週月曜日の朝9時（日本時間）に自動的に更新されます。
+
+### どうやって日本語に翻訳していますか？
+
+DeepL APIを使用して、高品質な日本語翻訳を提供しています。
+
+### どんなプログラミング言語に対応していますか？
+
+JavaScript, TypeScript, Python, Go, Rust, Java, C++など、主要な言語に対応しています。
+
+### リポジトリの順番はどう決まっていますか？
+
+GitHubのTrendingページのランキングに基づいています。スター数、フォーク数、最近の活動などが考慮されています。
 
 ## 技術スタック
 
-- **フロントエンド**: Next.js 15 (App Router), TypeScript, Tailwind CSS
-- **バックエンド**: Next.js API Routes (Serverless)
-- **翻訳**: DeepL API（無料版）
-- **データ取得**: GitHub Trending スクレイピング + GitHub REST API
-- **ホスティング**: Vercel（無料）
-- **自動更新**: Vercel Cron Jobs
+このサービスは以下の技術で作られています：
 
-## 開発環境のセットアップ
+- **フレームワーク**: Next.js 15 (App Router)
+- **言語**: TypeScript
+- **スタイリング**: Tailwind CSS
+- **翻訳**: DeepL API
+- **ホスティング**: Vercel
 
-### 前提条件
+## 開発者向け情報
 
-- Node.js 18以上
-- pnpm
-
-### インストール
+### ローカル開発
 
 ```bash
 # 依存関係のインストール
 pnpm install
 
-# 環境変数の設定
-# .env.local を作成して必要なAPIキーを設定
-```
+# 環境変数の設定（.env.local）
+GITHUB_TOKEN=your_token
+DEEPL_API_KEY=your_key
+CRON_SECRET=your_secret
 
-### 環境変数
-
-`.env.local`に以下を設定:
-
-```bash
-# GitHub Personal Access Token
-GITHUB_TOKEN=ghp_xxxxxxxxxxxxxxxxxxxxx
-
-# DeepL API Key（無料版）
-DEEPL_API_KEY=xxxxx:fx
-
-# Vercel Cron認証用
-CRON_SECRET=your_random_secret_key
-```
-
-各APIキーの取得方法は [DEPLOYMENT.md](./DEPLOYMENT.md) を参照してください。
-
-### 開発サーバーの起動
-
-```bash
+# 開発サーバーの起動
 pnpm dev
 ```
 
-http://localhost:3000 を開いてアプリケーションを確認できます。
+詳細な開発・デプロイ手順は [DEPLOYMENT.md](./DEPLOYMENT.md) をご覧ください。
 
-### テスト
-
-```bash
-# ユニットテスト
-pnpm test
-
-# ESLint
-pnpm lint
-
-# ビルドテスト
-pnpm build
-```
-
-## デプロイ
-
-詳細なデプロイ手順は [DEPLOYMENT.md](./DEPLOYMENT.md) を参照してください。
-
-### クイックデプロイ
-
-```bash
-# Vercel CLIでデプロイ
-vercel --prod
-```
-
-## プロジェクト構成
+### プロジェクト構成
 
 ```
 github-weekly-jp/
 ├── app/                    # Next.js App Router
 │   ├── api/               # API Routes
-│   │   ├── trending/      # トレンドデータ取得API
-│   │   └── cron/          # Cronジョブ
-│   ├── layout.tsx         # ルートレイアウト
-│   ├── page.tsx           # ホームページ
-│   └── globals.css        # グローバルCSS
+│   └── page.tsx           # ホームページ
 ├── components/            # Reactコンポーネント
-│   ├── Header.tsx
-│   ├── Footer.tsx
-│   ├── TrendingList.tsx
-│   ├── RepoCard.tsx
-│   ├── LanguageFilter.tsx
-│   ├── PeriodFilter.tsx
-│   └── ErrorBoundary.tsx
 ├── lib/                   # ユーティリティ
-│   ├── scraper.ts        # GitHub Trendingスクレイピング
-│   ├── github.ts         # GitHub API
-│   ├── translator.ts     # DeepL翻訳
-│   └── cache.ts          # キャッシュ管理
 ├── types/                 # TypeScript型定義
-│   └── index.ts
-├── public/                # 静的ファイル
-│   └── data/             # キャッシュデータ（gitignore）
-├── vercel.json           # Vercel設定（Cron）
-└── DEPLOYMENT.md         # デプロイガイド
+└── public/                # 静的ファイル
 ```
 
 ## ライセンス
 
 MIT
+
+---
+
+**開発・運営**: このプロジェクトはオープンソースです。改善提案やバグ報告は[GitHubのIssues](https://github.com/shotacoffee/github-weekly-jp/issues)までお願いします。

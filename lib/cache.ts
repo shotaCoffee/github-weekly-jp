@@ -16,7 +16,10 @@ export async function saveCache(data: TrendingData): Promise<void> {
   await fs.writeFile(filePath, JSON.stringify(data, null, 2), 'utf-8');
 }
 
-export async function loadCache(period: Period = 'weekly', language: string = ''): Promise<TrendingData | null> {
+export async function loadCache(
+  period: Period = 'weekly',
+  language: string = ''
+): Promise<TrendingData | null> {
   try {
     const fileName = getCacheFileName(period, language);
     const filePath = path.join(CACHE_DIR, fileName);

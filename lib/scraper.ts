@@ -4,7 +4,10 @@ import type { TrendingRepo, Period } from '@/types';
 
 const TRENDING_URL = 'https://github.com/trending';
 
-export async function scrapeTrending(language: string = '', period: Period = 'weekly'): Promise<TrendingRepo[]> {
+export async function scrapeTrending(
+  language: string = '',
+  period: Period = 'weekly'
+): Promise<TrendingRepo[]> {
   const url = `${TRENDING_URL}${language ? `/${language}` : ''}?since=${period}`;
 
   try {
@@ -39,11 +42,7 @@ export async function scrapeTrending(language: string = '', period: Period = 'we
       const stars = parseNumber(starsText);
 
       // 今週のスター数
-      const weekStarsText = $el
-        .find('span.d-inline-block.float-sm-right')
-        .first()
-        .text()
-        .trim();
+      const weekStarsText = $el.find('span.d-inline-block.float-sm-right').first().text().trim();
       const starsThisWeek = parseNumber(weekStarsText);
 
       // フォーク数

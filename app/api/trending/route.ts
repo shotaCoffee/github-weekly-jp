@@ -47,10 +47,7 @@ export async function GET(request: Request) {
       return NextResponse.json(cached);
     }
 
-    return NextResponse.json(
-      { error: 'Failed to fetch trending repositories' },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: 'Failed to fetch trending repositories' }, { status: 500 });
   }
 }
 

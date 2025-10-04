@@ -10,14 +10,12 @@ describe('translator', () => {
   });
 
   describe('translateDescription', () => {
-    it('should translate description using OpenAI API', async () => {
+    it('should translate description using DeepL API', async () => {
       vi.mocked(axios.post).mockResolvedValue({
         data: {
-          choices: [
+          translations: [
             {
-              message: {
-                content: 'React フレームワーク',
-              },
+              text: 'React フレームワーク',
             },
           ],
         },
@@ -28,18 +26,11 @@ describe('translator', () => {
 
       expect(result).toBe('React フレームワーク');
       expect(axios.post).toHaveBeenCalledWith(
-        'https://api.openai.com/v1/chat/completions',
-        expect.objectContaining({
-          model: 'gpt-4o-mini',
-          messages: expect.arrayContaining([
-            expect.objectContaining({
-              role: 'user',
-            }),
-          ]),
-        }),
+        'https://api-free.deepl.com/v2/translate',
+        expect.any(URLSearchParams),
         expect.objectContaining({
           headers: expect.objectContaining({
-            Authorization: expect.stringContaining('Bearer'),
+            'Content-Type': 'application/x-www-form-urlencoded',
           }),
         })
       );
@@ -55,11 +46,34 @@ describe('translator', () => {
 
     it('should return original description on API error', async () => {
       vi.mocked(axios.post).mockRejectedValue(new Error('API Error'));
+      vi.mocked(axios.isAxiosError).mockReturnValue(false);
 
       const { translateDescription } = await import('./translator');
       const result = await translateDescription('Original text', 'test/repo');
 
       expect(result).toBe('Original text');
+    });
+
+    it('should retry on 429 rate limit error', async () => {
+      const error429 = {
+        response: {
+          status: 429,
+        },
+      };
+      vi.mocked(axios.isAxiosError).mockReturnValue(true);
+      vi.mocked(axios.post)
+        .mockRejectedValueOnce(error429)
+        .mockResolvedValueOnce({
+          data: {
+            translations: [{ text: '翻訳成功' }],
+          },
+        });
+
+      const { translateDescription } = await import('./translator');
+      const result = await translateDescription('Test text', 'test/repo');
+
+      expect(result).toBe('翻訳成功');
+      expect(axios.post).toHaveBeenCalledTimes(2);
     });
   });
 
@@ -100,11 +114,9 @@ describe('translator', () => {
     it('should translate all repositories', async () => {
       vi.mocked(axios.post).mockResolvedValue({
         data: {
-          choices: [
+          translations: [
             {
-              message: {
-                content: 'テスト',
-              },
+              text: 'テスト',
             },
           ],
         },

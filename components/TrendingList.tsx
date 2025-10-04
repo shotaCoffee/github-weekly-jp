@@ -21,7 +21,11 @@ export function TrendingList({ repos }: Props) {
       <div className="text-gray-600 mb-4">{repos.length} repositories found</div>
 
       {repos.map((repo, index) => (
-        <div key={repo.name} className="animate-fade-in" style={{ animationDelay: `${index * 50}ms` }}>
+        <div
+          key={repo.name}
+          className="animate-fade-in"
+          style={{ animationDelay: `${index * 50}ms` }}
+        >
           <RepoCard repo={repo} />
         </div>
       ))}
