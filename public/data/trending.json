@@ -1,0 +1,365 @@
+{
+  "date": "2025-10-04T09:08:42.295Z",
+  "repos": [
+    {
+      "name": "harry0703/MoneyPrinterTurbo",
+      "owner": "harry0703",
+      "repo": "MoneyPrinterTurbo",
+      "description": "利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.",
+      "descriptionJa": "利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 45593,
+      "starsThisWeek": 5525,
+      "forks": 6374,
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/4928832?v=4",
+      "builtBy": [
+        {
+          "username": "harry0703",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/4928832?s=40&v=4"
+        },
+        {
+          "username": "yyhhyyyyyy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/95077259?s=40&v=4"
+        },
+        {
+          "username": "vuisme",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/96235876?s=40&v=4"
+        },
+        {
+          "username": "KevinZhang19870314",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/13794286?s=40&v=4"
+        },
+        {
+          "username": "garylab",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/3072379?s=40&v=4"
+        }
+      ]
+    },
+    {
+      "name": "tile-ai/tilelang",
+      "owner": "tile-ai",
+      "repo": "tilelang",
+      "description": "Domain-specific language designed to streamline the development of high-performance GPU/CPU/Accelerators kernels",
+      "descriptionJa": "Domain-specific language designed to streamline the development of high-performance GPU/CPU/Accelerators kernels",
+      "language": "C++",
+      "languageColor": "#f34b7d",
+      "stars": 3101,
+      "starsThisWeek": 1414,
+      "forks": 223,
+      "url": "https://github.com/tile-ai/tilelang",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/183584698?v=4",
+      "builtBy": [
+        {
+          "username": "LeiWang1999",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/34334180?s=40&v=4"
+        },
+        {
+          "username": "chengyupku",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/54519279?s=40&v=4"
+        },
+        {
+          "username": "xwhzz",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/132904306?s=40&v=4"
+        },
+        {
+          "username": "tzj-fxz",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/97930865?s=40&v=4"
+        },
+        {
+          "username": "yyttt6",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/134183314?s=40&v=4"
+        }
+      ]
+    },
+    {
+      "name": "humanlayer/humanlayer",
+      "owner": "humanlayer",
+      "repo": "humanlayer",
+      "description": "The best way to get AI coding agents to solve hard problems in complex codebases.",
+      "descriptionJa": "The best way to get AI coding agents to solve hard problems in complex codebases.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 5478,
+      "starsThisWeek": 2339,
+      "forks": 410,
+      "url": "https://github.com/humanlayer/humanlayer",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/177409041?v=4",
+      "builtBy": [
+        {
+          "username": "dexhorthy",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/3730605?s=40&v=4"
+        },
+        {
+          "username": "balanceiskey",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/470240?s=40&v=4"
+        },
+        {
+          "username": "K-Mistele",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/18430555?s=40&v=4"
+        },
+        {
+          "username": "samdickson22",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/217395086?s=40&v=4"
+        },
+        {
+          "username": "claude",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/81847?s=40&v=4"
+        }
+      ]
+    },
+    {
+      "name": "nextcloud/server",
+      "owner": "nextcloud",
+      "repo": "server",
+      "description": "☁️ Nextcloud server, a safe home for all your data",
+      "descriptionJa": "☁️ Nextcloud server, a safe home for all your data",
+      "language": "PHP",
+      "languageColor": "#4F5D95",
+      "stars": 32650,
+      "starsThisWeek": 1739,
+      "forks": 4542,
+      "url": "https://github.com/nextcloud/server",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/19211038?v=4",
+      "builtBy": [
+        {
+          "username": "rullzer",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/45821?s=40&v=4"
+        },
+        {
+          "username": "MorrisJobke",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/245432?s=40&v=4"
+        },
+        {
+          "username": "DeepDiver1975",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/1005065?s=40&v=4"
+        },
+        {
+          "username": "nickvergessen",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213943?s=40&v=4"
+        },
+        {
+          "username": "icewind1991",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/1283854?s=40&v=4"
+        }
+      ]
+    },
+    {
+      "name": "Done-0/fuck-u-code",
+      "owner": "Done-0",
+      "repo": "fuck-u-code",
+      "description": "Legacy-Mess Detector – assess the “legacy-mess level” of your code and output a beautiful report | 屎山代码检测器，评估代码的“屎山等级”并输出美观的报告",
+      "descriptionJa": "Legacy-Mess Detector – assess the “legacy-mess level” of your code and output a beautiful report | 屎山代码检测器，评估代码的“屎山等级”并输出美观的报告",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "stars": 4833,
+      "starsThisWeek": 1135,
+      "forks": 237,
+      "url": "https://github.com/Done-0/fuck-u-code",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/168193380?v=4",
+      "builtBy": [
+        {
+          "username": "Done-0",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/168193380?s=40&v=4"
+        },
+        {
+          "username": "Magniveo",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/5388016?s=40&v=4"
+        },
+        {
+          "username": "tyh97",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/34681937?s=40&v=4"
+        },
+        {
+          "username": "Robert-Ro",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/52750222?s=40&v=4"
+        },
+        {
+          "username": "Cat7373",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/9296576?s=40&v=4"
+        }
+      ]
+    },
+    {
+      "name": "oauth2-proxy/oauth2-proxy",
+      "owner": "oauth2-proxy",
+      "repo": "oauth2-proxy",
+      "description": "A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers.",
+      "descriptionJa": "A reverse proxy that provides authentication with Google, Azure, OpenID Connect and many more identity providers.",
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "stars": 12773,
+      "starsThisWeek": 686,
+      "forks": 1849,
+      "url": "https://github.com/oauth2-proxy/oauth2-proxy",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/62798169?v=4",
+      "builtBy": [
+        {
+          "username": "JoelSpeed",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/9232216?s=40&v=4"
+        },
+        {
+          "username": "jehiah",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/45028?s=40&v=4"
+        },
+        {
+          "username": "tuunit",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/18513179?s=40&v=4"
+        },
+        {
+          "username": "renovate",
+          "avatarUrl": "https://avatars.githubusercontent.com/in/2740?s=40&v=4"
+        },
+        {
+          "username": "mbland",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/301547?s=40&v=4"
+        }
+      ]
+    },
+    {
+      "name": "imputnet/helium",
+      "owner": "imputnet",
+      "repo": "helium",
+      "description": "Private, fast, and honest web browser",
+      "descriptionJa": "Private, fast, and honest web browser",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 4229,
+      "starsThisWeek": 1136,
+      "forks": 57,
+      "url": "https://github.com/imputnet/helium",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/152056268?v=4",
+      "builtBy": [
+        {
+          "username": "wukko",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/71202418?s=40&v=4"
+        },
+        {
+          "username": "dumbmoron",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/136796770?s=40&v=4"
+        },
+        {
+          "username": "Ahrotahn",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/40727284?s=40&v=4"
+        },
+        {
+          "username": "networkException",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/42888162?s=40&v=4"
+        },
+        {
+          "username": "cmcaine",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6000761?s=40&v=4"
+        }
+      ]
+    },
+    {
+      "name": "ZuodaoTech/everyone-can-use-english",
+      "owner": "ZuodaoTech",
+      "repo": "everyone-can-use-english",
+      "description": "人人都能用英语",
+      "descriptionJa": "人人都能用英语",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 30979,
+      "starsThisWeek": 1281,
+      "forks": 4420,
+      "url": "https://github.com/ZuodaoTech/everyone-can-use-english",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/87694204?v=4",
+      "builtBy": [
+        {
+          "username": "an-lee",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/22209056?s=40&v=4"
+        },
+        {
+          "username": "xiaolai",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/152970?s=40&v=4"
+        },
+        {
+          "username": "lyricat",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/67439?s=40&v=4"
+        },
+        {
+          "username": "zgw010",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/26003810?s=40&v=4"
+        },
+        {
+          "username": "divisey",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/26423172?s=40&v=4"
+        }
+      ]
+    },
+    {
+      "name": "TanStack/router",
+      "owner": "TanStack",
+      "repo": "router",
+      "description": "🤖 Fully typesafe Router for React (and friends) w/ built-in caching, 1st class search-param APIs, client-side cache integration and isomorphic rendering.",
+      "descriptionJa": "🤖 Fully typesafe Router for React (and friends) w/ built-in caching, 1st class search-param APIs, client-side cache integration and isomorphic rendering.",
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "stars": 11570,
+      "starsThisWeek": 214,
+      "forks": 1253,
+      "url": "https://github.com/TanStack/router",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/72518640?v=4",
+      "builtBy": [
+        {
+          "username": "tannerlinsley",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/5580297?s=40&v=4"
+        },
+        {
+          "username": "schiller-manuel",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/6340397?s=40&v=4"
+        },
+        {
+          "username": "SeanCassiere",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/33615041?s=40&v=4"
+        },
+        {
+          "username": "autofix-ci",
+          "avatarUrl": "https://avatars.githubusercontent.com/in/243519?s=40&v=4"
+        },
+        {
+          "username": "birkskyum",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/74932975?s=40&v=4"
+        }
+      ]
+    },
+    {
+      "name": "onyx-dot-app/onyx",
+      "owner": "onyx-dot-app",
+      "repo": "onyx",
+      "description": "Open Source AI Platform - AI Chat with advanced features that works with every LLM",
+      "descriptionJa": "Open Source AI Platform - AI Chat with advanced features that works with every LLM",
+      "language": "Python",
+      "languageColor": "#3572A5",
+      "stars": 15338,
+      "starsThisWeek": 1308,
+      "forks": 2050,
+      "url": "https://github.com/onyx-dot-app/onyx",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/131946000?v=4",
+      "builtBy": [
+        {
+          "username": "Weves",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/25087905?s=40&v=4"
+        },
+        {
+          "username": "pablonyx",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/171597620?s=40&v=4"
+        },
+        {
+          "username": "yuhongsun96",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/32520769?s=40&v=4"
+        },
+        {
+          "username": "rkuo-danswer",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/173942086?s=40&v=4"
+        },
+        {
+          "username": "evan-onyx",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/183385614?s=40&v=4"
+        }
+      ]
+    }
+  ]
+}
