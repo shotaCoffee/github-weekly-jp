@@ -3,6 +3,7 @@
 .idea
 DEPLOYMENT.md
 github-trending-jp.md
+public/data/
 
 # dependencies
 /node_modules
