@@ -15,6 +15,16 @@ export function Footer() {
               @shotaCoffee
             </a>
           </p>
+          <div className="flex justify-center gap-4 mt-4">
+            <a
+              href="https://github.com/shotaCoffee/github-weekly-jp"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-gray-900 text-sm"
+            >
+              GitHub
+            </a>
+          </div>
         </div>
       </div>
     </footer>

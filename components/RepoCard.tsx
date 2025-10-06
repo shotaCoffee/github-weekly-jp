@@ -77,7 +77,7 @@ export function RepoCard({ repo }: Props) {
             {/* 今週のスター数 */}
             {repo.starsThisWeek > 0 && (
               <span className="flex items-center gap-1 text-orange-600 font-semibold">
-                🔥 +{repo.starsThisWeek.toLocaleString()} this week
+                🔥 +{repo.starsThisWeek.toLocaleString()} 今週
               </span>
             )}
           </div>

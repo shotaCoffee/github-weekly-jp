@@ -16,6 +16,20 @@ export const metadata: Metadata = {
   title: 'GitHub Weekly JP - 今週注目のリポジトリ TOP10を日本語で',
   description:
     'GitHub Trendingで話題のリポジトリを日本語説明付きで表示。プログラミング言語や期間で絞り込んで、最新のトレンドをチェックできます。',
+  keywords: ['GitHub', 'Trending', '日本語', 'エンジニア', 'プログラミング', 'オープンソース'],
+  openGraph: {
+    title: 'GitHub Weekly JP',
+    description: '人気のGitHubリポジトリを日本語で簡単チェック',
+    url: 'https://github-weekly-jp.vercel.app',
+    siteName: 'GitHub Weekly JP',
+    locale: 'ja_JP',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'GitHub Weekly JP',
+    description: '人気のGitHubリポジトリを日本語で簡単チェック',
+  },
 };
 
 export default function RootLayout({
